@@ -12,8 +12,9 @@ public static class Program
         // Create a new deck
         var deck = Deck.NewDeck();
 
-        // TODO: shuffle the deck
+        // Shuffle the deck using Fisher-Yates algorithm
         Console.WriteLine("Shuffling...");
+        deck.Shuffle();
 
         // Deal all the cards
         while (!deck.Empty)
